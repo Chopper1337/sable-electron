@@ -1,4 +1,4 @@
-# Maintainer: Chopper1337
+# Maintainer: legible7274
 _pkgname=sable-electron
 pkgname="${_pkgname}-git"
 pkgver=r1.0000000
