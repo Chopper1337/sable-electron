@@ -1,12 +1,12 @@
 {
-  "name": "cinny-electron",
+  "name": "sable-electron",
   "private": true,
   "version": "1.1.1",
-  "description": "Electron wrapper around Cinny, Yet another matrix client",
+  "description": "Electron wrapper around Sable, Yet another matrix client",
   "main": "./out/main/index.js",
-  "author": "Enova",
+  "author": "Chopper1337",
   "type": "module",
-  "homepage": "https://github.com/Enovale/cinny-electron",
+  "homepage": "https://github.com/chopper1337/sable-electron",
   "packageManager": "pnpm@10.20.0",
   "scripts": {
     "format": "prettier --write .",
@@ -22,8 +22,8 @@
     "build:linux": "pnpm run build && electron-builder --linux"
   },
   "dependencies": {
-    "@cinny-electron/core": "workspace:*",
-    "@cinny-electron/types": "workspace:*",
+    "@sable-electron/core": "workspace:*",
+    "@sable-electron/types": "workspace:*",
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
     "@folder/xdg": "^4.0.1",

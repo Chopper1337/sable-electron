@@ -1,6 +1,6 @@
 import * as fs from 'fs/promises'
 import { join } from 'path'
-import { PatchMatch, PatchReplace, PluginExports } from '@cinny-electron/types'
+import { PatchMatch, PatchReplace, PluginExports } from '@sable-electron/types'
 
 export const pluginList: PluginExports[] = []
 

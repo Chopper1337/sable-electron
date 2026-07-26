@@ -8,7 +8,7 @@ import contextMenu from 'electron-context-menu'
 import { electronApp } from '@electron-toolkit/utils'
 import log from 'electron-log/main'
 
-export const dataDir = process.env.CINNY_USER_DATA_DIR || join(app.getPath('userData'))
+export const dataDir = process.env.SABLE_USER_DATA_DIR || join(app.getPath('userData'))
 
 let updateWin: BrowserWindow | null = null
 const modalProps = {
@@ -62,7 +62,7 @@ export async function updateAutostart(autostart: boolean | undefined): Promise<v
         writeFileSync(
           autostartFile,
           `[Desktop Entry]
-Name=Cinny
+Name=Sable
 Exec=${executable} %U
 Terminal=false
 Type=Application
@@ -70,7 +70,7 @@ Icon=${app.name}
 StartupWMClass=${app.name}
 GenericName=Internet Messenger
 Categories=Network;
-Keywords=matrix;cinny;electron;chat;
+Keywords=matrix;sable;electron;chat;
 Comment=Yet another matrix client
 MimeType=x-scheme-handler/matrix;`
         )

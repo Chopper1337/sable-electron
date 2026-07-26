@@ -1,9 +1,9 @@
 import { ipcMain, Menu, shell, Tray } from 'electron'
 import { aboutWindow, relaunch, updaterWindow } from './util'
-import normalIcon from '../../../resources/tray-icon/cinny.png?asset'
-import unreadIcon from '../../../resources/tray-icon/cinny-unread.png?asset'
-import highlightIcon from '../../../resources/tray-icon/cinny-highlight.png?asset'
-import { IpcEvents } from '@cinny-electron/core'
+import normalIcon from '../../../resources/tray-icon/sable.png?asset'
+import unreadIcon from '../../../resources/tray-icon/sable-unread.png?asset'
+import highlightIcon from '../../../resources/tray-icon/sable-highlight.png?asset'
+import { IpcEvents } from '@sable-electron/core'
 import { allowAutoUpdates, checkForUpdates, config, quitApp, toggleWindow } from './index'
 import { quickCssPath } from './quickcss'
 
@@ -61,7 +61,7 @@ export function createTray(): void {
       click: quitApp
     }
   ])
-  tray.setToolTip('Cinny')
+  tray.setToolTip('Sable')
   tray.setContextMenu(contextMenu)
   tray.on('click', () => {
     toggleWindow()

@@ -1,4 +1,4 @@
-import { PluginExports } from '@cinny-electron/types'
+import { PluginExports } from '@sable-electron/types'
 
 export const patches: PluginExports['patches'] = [
   {
